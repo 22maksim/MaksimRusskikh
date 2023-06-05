@@ -7,76 +7,112 @@
   <meta name="description" content="cv, resume,maksimru">
   <meta name="keywords" content="Это сайт резюма Максима Русских">
   <title>My vizitka</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <img src="./foto1.png" alt="my_foto" width="200px">
-  <h1>Русски Максим</h1>
-  <p>Я <strong>изучаю</strong> программирование.</p>
-  <p>Мне нравится язык <em>JavaScript</em></p>
- 
-  <h2>Мои контакты:</h2>
-  <a href="https://google.com">vk</a>|
-  <a href="https://github.com/22maksim">GitHub</a>|
-  <a href="https://codepen.io/22maksim/pen/yLRWZwd">Codepen</a>
- 
-  <h1>Мои хобби:</h1>
-  <ol>
-    <li>Путешествия</li>
-    <li>Программирование</li>
-    <li>Приготовление пищи</li>
-    <li>Йога</li>
-    <li>Бег по утрам</li>
-    <li>Зарядка</li>
-  </ol>
 
-  <h1>Опыт работы:</h1>
+  <div class="container">
+    <div class="info">
+      <img class="avatar" src="./foto1.png" alt="my_foto" width="200px">
 
-  <table>
-    <thead>
-      <tr>
-        <th>Название Организации</th>
-        <th>Должность</th>
-        <th>период работы</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Дикси</td>
-        <td>работник склада</td>
-        <td>2018-2020</td>
-      </tr>
-      <tr>
-        <td>Красно&Белое</td>
-        <td>работник склада</td>
-        <td>2020-2022</td>
-      </tr>
-      <tr>
-        <td>Тинькофф</td>
-        <td>продажник</td>
-        <td>2023-2023</td>
-      </tr>
-    </tbody>
-  </table>
+      <div class="info-text">
+        <h1>Русски Максим</h1>
 
-  <h1>Связаться со мной:</h1>
+        <p>Я <strong>изучаю</strong> программирование.</p>
 
-  <form action="">
-    <div>
-      <label for="firstName">Ваше имя:</label>
-    <input type="text" name="firstName" id="firstName" placeholder="Ваше имя">
+        <p>Мне нравится язык JavaScript</p>
+      
+        <h2>Мои контакты:</h2>
+
+        <a href="https://google.com">vk</a>
+        |
+        <a href="https://github.com/22maksim">GitHub</a>
+        |
+        <a href="https://codepen.io/22maksim/pen/yLRWZwd">Codepen</a>
+      </div>
     </div>
-    <div>
-      <label for="email">Ваш email:</label>
-      <input type="email" name="email" id="email" placeholder="email">
+
+    <div class="card hobbi">
+      <h2>Мои хобби:</h2>
+
+      <ol>
+        <li>Путешествия</li>
+        <li>Программирование</li>
+        <li>Приготовление пищи</li>
+        <li>Йога</li>
+        <li>Бег по утрам</li>
+        <li>Зарядка</li>
+      </ol>
     </div>
-    <div>
-      <label for="text">Ваше сообщение:</label><br>
-      <textarea name="text" id="text" cols="20" rows="5" placeholder="Ваше сообщение..."></textarea>
+
+    <div class="card bg-red margin-tab">
+      <h2>Опыт работы:</h2>
+
+      <table class="table">
+
+        <thead>
+          <tr>
+            <th>Название Организации</th>
+            <th>Должность</th>
+            <th>период работы</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Дикси</td>
+            <td>работник склада</td>
+            <td>2018-2020</td>
+          </tr>
+          <tr>
+            <td>Красно&Белое</td>
+            <td>работник склада</td>
+            <td>2020-2022</td>
+          </tr>
+          <tr>
+            <td>Тинькофф</td>
+            <td>продажник</td>
+            <td>2023-2023</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
-    <div>
-      <input type="submit" value="отправить">
+
+    <div class="card bg-green">
+      <h2>Мои работы:</h2>
+      <ol>
+        <li><a href="https://github.com/22maksim/">мой GitHub</a></li>
+        <li><a href="https://vk.com/id650118381">мой ВК</a></li>
+      </ol>
     </div>
-  </form>
+  </div>
+  <div class=" bg-yellow formT">
+    
+
+
+    <form class="form" action="/">
+      <h2>Связаться со мной</h2>
+      <div class="row-form">
+        <div class="form-group">
+          <label for="firstName">Ваше имя:</label>
+          <input type="text" name="firstName" id="firstName" placeholder="Введите имя">
+        </div>
+        <div class="form-group">
+          <label for="email">Ваш email:</label>
+          <input type="email" name="email" id="email" placeholder="Введите email">
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="text">Ваше сообщение:</label>
+        <textarea name="text" id="text" cols="" rows="5" placeholder="Введите сообщение..."></textarea>
+      </div>
+      <div>
+        <input class="btn" type="submit" value="отправить">
+      </div>
+    </form>
+  </div>
+  
+
 
 </body>
 </html>

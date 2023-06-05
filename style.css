@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+* {
+  padding: 0;
+  /* margin: 0; */
+}
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 554;
+  color: #0f141e;
+  background-color: #f1f1f1;
+}
+
+.container {
+  max-width: 750px;
+  margin: auto;
+  margin-bottom: 15px;
+  padding: 30px 8px 10px ;
+  background: #d1e1d4;
+  border-radius: 20px;
+}
+
+.avatar {
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin-left: 10px;
+}
+
+.info {
+  margin-bottom: 30px;
+  display: flex;
+
+}
+
+.info-text p {
+  font-size: 18px;
+  font-style: italic;
+  color: rgb(79, 133, 115);
+  margin: 0;
+}
+
+.info-text {
+  margin-left: 40px;
+}
+
+.info-text h4 {
+  margin-bottom: 10px;
+}
+
+@media (max-width:650px) {
+  .info {
+    display: block;
+    margin: auto;
+  }
+  .info-text {
+    display: block;
+    margin: auto;
+    text-align: center;
+  }
+  .avatar {
+    display: block;
+    margin: auto;
+  }
+}
+
+.card {
+  border-radius: 20px;
+  background: #fff;
+  padding: 15px 20px;
+  margin: 10px;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+}
+
+.hobbi {
+  padding: 0 20px;
+}
+
+.hobbi li {
+  margin-bottom: 10px;
+}
+
+.hobbi li:nth-child(2n-1) {
+  background: #c0edc9;
+  opacity: 0.6;
+}
+
+.bg-yellow {
+  background: #dad7d7;
+}
+
+.bg-red {
+  background: #ecdede;
+}
+
+.bg-green {
+  background: #d0e2d2;
+}
+
+ol {
+  margin-left: 40px;
+}
+
+.btn {
+  border: none;
+  background: rgb(141, 163, 167);
+  border-radius: 15px;
+  padding: 10px 15px;
+  font-family: inherit;
+}
+
+.btn:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.btn:active {
+  background:rgb(3, 74, 50)
+}
+
+a {
+  color:#1e160f;
+  text-decoration: none;
+}
+
+a:visited {
+  color:rgb(52, 96, 81);
+}
+
+a:hover {
+  color:#701e19;
+  text-decoration: underline;
+}
+
+a:active {
+  color: #d0736e;
+}
+
+.table {
+  width: 100%;
+}
+
+.table td {
+  padding-bottom: 10px;
+}
+
+.table td:nth-child(3), .table td:nth-child(2)  {
+  color: #d79895;
+}
+
+/* form */
+.formT {
+  max-width: 762px;
+  margin: auto;
+}
+
+.form h2 {
+  text-align: center;
+}
+
+.row-form {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.row-form .form-group {
+  margin-right: 20px;
+  width: 50%;
+}
+
+.row-form .form-group:last-child {
+  margin-right: 0;
+}
+
+.form-group label {
+  width: 100%;
+  display: block;
+  font-size: 14px;
+  color:rgb(146, 145, 145);
+} 
+
+.form-group input, 
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #b2b0b0;
+  color:rgb(146, 145, 145);
+  padding: 15px 0 10px;
+  outline: none;
+  font-family: inherit;
+}
+
+.margin-tab {
+  margin: auto;
+}
